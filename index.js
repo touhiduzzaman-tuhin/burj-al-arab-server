@@ -13,6 +13,8 @@ app.use(bodyParser.json());
 
 var serviceAccount = require('./configs/burj-al-arab-website-firebase-adminsdk-xfqbj-60133b5f6c.json');
 
+// var serviceAccount = (`${process.env.JSON_FILE}`)
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
