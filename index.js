@@ -82,4 +82,4 @@ app.get('/', (req, res) => {
   res.send('Hello Burj Al Arab Website.');
 })
 
-app.listen(port)
+app.listen(process.env.PORT || port)
